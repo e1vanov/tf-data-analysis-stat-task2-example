@@ -13,4 +13,4 @@ def solution(p: float, x: np.array) -> tuple:
     alpha = 1 - p
     n = x.size
     bias = 0.089
-    return (bias + (np.max(X) - bias) / ((1 - alpha / 2)**(1/n)), bias + (np.max(X) - bias) / ((alpha / 2)**(1/n)))
+    return (bias + (np.max(x) - bias) / ((1 - alpha / 2)**(1/n)), bias + (np.max(x) - bias) / ((alpha / 2)**(1/n)))
